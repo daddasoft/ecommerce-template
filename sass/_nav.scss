@@ -1,0 +1,40 @@
+nav {
+  height: 100px;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  &.sticky {
+    background: #fff;
+    ul li a {
+      color: #000;
+    }
+    svg path {
+      fill: #000;
+    }
+    .links li a {
+      color: #000;
+    }
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+  }
+  ul li a {
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+  }
+  .links li a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
