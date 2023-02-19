@@ -5,8 +5,11 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
+  transition: background-color .4s;
   &.sticky {
-    background: #fff;
+    background-color: #ffffff91;
+    backdrop-filter: blur(8px);
+    
     ul li a {
       color: #000;
     }

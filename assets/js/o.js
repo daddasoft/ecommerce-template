@@ -26,16 +26,4 @@ setInterval(() => {
   sliderAmount += perSlide;
 }, 4000);
 
-function returnFirstElementFromArray() { }
-
-new Splide("#splide", {
-  fixedWidth: "272px",
-  interval: 1000,
-  type: "loop",
-  autoplay: true,
-  focus: "center",
-  gap: "20px",
-  pagination: false,
-  easingFunc: (t) => number = t => 1 - Math.pow(1 - t, 4)
-
-}).mount();
+function returnFirstElementFromArray() {}

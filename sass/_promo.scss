@@ -1,121 +1,117 @@
 .promo {
-    padding: 70px 0 70px 0;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+  padding: 70px 0 70px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 
-    grid-gap: 20px;
+  grid-gap: 20px;
 
-    &__card {
-        height: 373px;
-        background-color: chartreuse;
-        position: relative;
+  &__card {
+    height: 373px;
+    background-color: chartreuse;
+    position: relative;
 
-        &--main {
-            grid-column: span 2;
-        }
-
-        &--sub {
-            background-color: crimson;
-        }
-
-        &__image {
-            width: 100%;
-            height: 100%;
-
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-        }
-
-        &:hover &__content {
-            opacity: 1;
-        }
-
-        &:hover &__content button {
-            transform: none;
-        }
-
-        &:hover &__content h2 {
-            transform: none;
-        }
-
-        &__content {
-            position: absolute;
-            transition: opacity .4s;
-            opacity: 0;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: #0000008a;
-            padding: 30px;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-
-            h2 {
-                color: #fff;
-                width: 157px;
-                font-size: 24px;
-                margin-bottom: 30px;
-                transition: transform .3s;
-
-                transform: translateY(-10px);
-
-            }
-
-            button {
-                width: 168px;
-                height: 42px;
-                border-radius: 50px;
-                background: #fff;
-                border: none;
-                outline: none;
-                font-size: 13px;
-                font-weight: bold;
-                cursor: pointer;
-                font-family: inherit;
-                transition: transform .3s;
-                transform: translateY(-10px);
-
-            }
-        }
-
+    &--main {
+      grid-column: span 2;
     }
-}
 
+    &--sub {
+      background-color: crimson;
+    }
 
-header .container {
-    height: 100%;
-}
+    &__image {
+      width: 100%;
+      height: 100%;
 
-.stepper {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
 
-    .upper {
-        width: 3px;
-        height: 300px;
-        border-radius: 30px;
-        background: rgba(255, 255, 255, 0.356);
+    &:hover &__content {
+      opacity: 1;
+    }
+
+    &:hover &__content button {
+      transform: none;
+    }
+
+    &:hover &__content h2 {
+      transform: none;
     }
 
     &__content {
-        display: flex;
-        flex-direction: column;
-        color: #fff;
-        align-items: center;
+      position: absolute;
+      transition: opacity 0.4s;
+      opacity: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #0000008a;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
 
-        .fill {
-            height: calc(100% / 5);
-            width: 100%;
-            background: #fff;
-            border-radius: 30px;
-            transition: all .3s;
-        }
+      h2 {
+        color: #fff;
+        width: 157px;
+        font-size: 24px;
+        margin-bottom: 30px;
+        transition: transform 0.3s;
+
+        transform: translateY(-10px);
+      }
+
+      button {
+        width: 168px;
+        height: 42px;
+        border-radius: 50px;
+        background: #fff;
+        border: none;
+        outline: none;
+        font-size: 13px;
+        font-weight: bold;
+        cursor: pointer;
+        font-family: inherit;
+        transition: transform 0.3s;
+        transform: translateY(-10px);
+      }
     }
+  }
+}
+
+header .container {
+  height: 100%;
+}
+
+.stepper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+
+  .upper {
+    width: 3px;
+    height: 300px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.356);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    align-items: center;
+
+    .fill {
+      height: calc(100% / 5);
+      width: 100%;
+      background: #fff;
+      border-radius: 30px;
+      transition: all 0.3s;
+    }
+  }
 }
