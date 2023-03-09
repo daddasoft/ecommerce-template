@@ -29,6 +29,13 @@ nav {
   ul {
     list-style: none;
     display: flex;
+    &.icons {
+      li a {
+        i {
+          font-size: 20px;
+        }
+      }
+    }
   }
   ul li a {
     text-decoration: none;

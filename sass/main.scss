@@ -4,3 +4,38 @@
 @import "./header";
 @import "./promo";
 @import "./discover";
+
+
+
+
+.accordion{
+
+   &__header{
+    background: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__title{
+        font-size:18px;
+        font-weight: 600;
+        color: rgb(26, 26, 26);
+    }
+    &__swiper {
+        line-height: 0.7;
+        i {
+
+            font-size: 24px;
+        }
+    }
+   }
+   &__content{
+    &.open{
+        height: auto;
+        padding: 10px 5px;
+    }
+    height: 0;
+    overflow: hidden;
+   }
+}
+  
