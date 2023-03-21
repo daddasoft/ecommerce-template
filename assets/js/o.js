@@ -14,7 +14,7 @@ setInterval(() => {
   gsap.to(slider, {
     x: `-${index * 100}%`,
 
-    ease: "elastic",
+    ease: "pow",
     duration: 2,
   });
   gsap.to(fill, {

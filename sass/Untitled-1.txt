@@ -49,3 +49,51 @@
     box-shadow: 0 0 0 5px #478f652f;
   }
 }
+
+
+
+
+.sub {
+    background: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 400;
+    width: 600px;
+    position: absolute;
+    /* top: 100%; */
+    left: 50%;
+    /* right: 50%; */
+    transform: translate(-50%, -6%);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding-block: 20px;
+    padding-inline: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10px 15px;
+        border-radius: 4px;
+        &:hover{
+            background: #f8f8f8;
+        }
+    }
+    .sub__icon {
+        height: 40px;
+        width: 40px;
+        background: #F6F6F6;
+        border-radius: 5px;
+        display: grid;
+        place-content: center;
+        margin-right: 10px;
+   
+
+        i {
+            font-size: 30px;
+        }
+    }
+}

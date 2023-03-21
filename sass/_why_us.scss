@@ -1,0 +1,88 @@
+.why-us {
+    padding-block: 80px;
+
+    &__heading {
+        text-align: center;
+        font-weight: 400;
+        font-size: 32px;
+    }
+
+    &__features {
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        // gap: 10px;
+
+        &__card {
+            display: flex;
+            flex-direction: column;
+            transition: all .4s;
+            padding-inline: 20px;
+            padding-block: 30px;
+
+            &:hover {
+                background: #fff;
+                border-radius: 5px;
+
+                i {
+                    color: #3523d8;
+                }
+
+                .why-us__features__card__icon {
+                    background: #E1ECFF;
+                }
+            }
+
+            &__icon {
+                height: 60px;
+                width: 60px;
+                background: #F6F6F6;
+                border-radius: 5px;
+                display: grid;
+                place-content: center;
+                margin-bottom: 20px;
+                transition: background .4s;
+
+                i {
+                    font-size: 40px;
+                    transition: color .4s;
+                }
+            }
+
+            &__label {
+                font-size: 18px;
+                font-weight: 600;
+            }
+
+            &__description {
+                font-size: 14px;
+                margin-top: 20px;
+                line-height: 1.5;
+                color: #262525;
+            }
+        }
+    }
+
+}
+
+
+
+.tody__shop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a{display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        svg{
+            transition: transform .4s;
+        }
+        &:hover{
+            text-decoration: underline;
+            svg {
+                transform: translateX(8px);
+            }
+        }
+    }
+}
